@@ -8,6 +8,14 @@
 # Jest
 Let's get into some algorithms, but we will do more than just solve them. We will write unit tests using Jest to check our work
 
+# Note:
+## Try to understand the problem then write the test, would be much easier.
+- Split the Big Problem into smaller problems
+- documents them
+- Gather small problems to create again the Big Problem
+
+# Starting with Jest
+
 - install jest through npm as devDep: $ npm i -D jest
 - add our script to package.json
 
@@ -20,7 +28,7 @@ How to create a simple test?
 
 - Now run the test: $ npm run test
 
-Full Code
+Full Code:
 
 ```
 sum.js
@@ -257,15 +265,18 @@ describe('Reverse String', ()=> {
 ```
 
 # Palindrome Algorithm
-
-
-
+- Check the palindrome 'folder'
+- Code is explained with comments
 # Arraychunk Algorithm
-
+- Check the Arraychunk 'folder'
+- Code is explained with comments
 # Anagram Algorithm
-
+- Check the anagram 'folder'
+- Code is explained with comments
 # Get Element By Tag - jsdom
-
+- Check the getElementByTag_jsdom 'folder'
+- Code is explained with comments
 # hasDuplicateIDS - jsdom
-
+- Check the hasDuplicatedIDs_jsdom 'folder'
+- Code is explained with comments
 
