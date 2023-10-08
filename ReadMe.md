@@ -170,3 +170,102 @@ Time:        0.6 s, estimated 1 s
 Ran all test suites.
 
 ```
+
+# Reverse String Algorithm
+
+- Create a folder 'reverseString'
+    - Inside of folder lets create two files, reversestring.js and reversestring.test.js
+    Now lets add code for each file
+
+```
+reversestring.js
+Solution 1 :
+Steps:
+
+- Create a function
+- Capture ther string first as param,
+- Convert that string into array,
+    - .split('') without space
+- Use reverse() method on an array,
+- Turn it back to a string with .join('') without space
+
+Code:
+
+function reverseString (str) {
+    return str.split('').reverse('').join('')
+}
+
+module.exports = reverseString;
+```
+
+
+```
+
+Solution 2:
+
+Code:
+function(str) {
+    let reversed = '';
+
+    for (let char of str) {
+        reversed = char + reversed
+    }
+
+    return reversed;
+}
+
+Solution 3:
+Code:
+
+function reverseString (str) {
+    return str.split('').reduce((reversed, char)=> char + reversed, '') 
+}
+
+module.exports = reverseString
+
+```
+
+```
+reversestring.test.js
+
+// Require reversestring.js first
+const reverseString = ('./reversestring');
+
+// Desbribe 
+describe('Reverse String', ()=> {
+    // Must be a function
+    it('should be a function', ()=>{
+    // Expect the typeof reverseString is equal to function
+    expect(typeof reverseString).toEqual('function')
+    });
+
+    // Make sure that returns a string
+    it('should return a string', ()=>{
+        // Invoke the reverseString() function first
+        // Expect the typeof reverseString is equal to string
+        expect(typeof reverseString('hello')).toEqual('string')
+        });
+
+    it('should return reversed string', ()=>{
+        // Expect the typeof reverseString is equal to function
+        expect(reverseString('hello')).toEqual('olleh');
+        expect(reverseString('bye')).toEqual('eyb');
+        expect(reverseString('endri')).toEqual('irdne');
+        });
+})
+
+```
+
+# Palindrome Algorithm
+
+
+
+# Arraychunk Algorithm
+
+# Anagram Algorithm
+
+# Get Element By Tag - jsdom
+
+# hasDuplicateIDS - jsdom
+
+
